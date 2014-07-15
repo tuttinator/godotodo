@@ -16,6 +16,8 @@ func main() {
   m.Get("/todos", TodosIndexPage)
   m.Get("/todos/:id", TodosShowPage)
 
+  m.Run()
+
 }
 
 func WelcomePage(r render.Render) {
